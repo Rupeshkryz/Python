@@ -1,0 +1,15 @@
+a=int(input())
+z=bin(a).lstrip("0b")
+w=[]
+r=list(z)
+s=0
+for i in r:
+    if(int(i)==0):
+        s=s+1
+    elif(int(i)==1):
+        w.append(s)
+        s=0
+if(max(w)==0):
+    print("No binary gap")
+else:
+    print(max(w))
