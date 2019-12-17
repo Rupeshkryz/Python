@@ -10,10 +10,14 @@ for i in range(len(a2)):
         for k in range(len(c2)):
             if(a2[i]==b2[j] or a2[i]==c2[k]):
                 d.append(a2[i])
-            elif(b2[j]==c2[k] or b2[j]==c2[k]):
+            elif(b2[j]==a2[i] or b2[j]==c2[k]):
                 d.append(b2[j])
             elif(c2[k]==a2[i] or c2[k]==b2[j]):
-                d.append(c2[k])
-m=list(set(d))
-m.sort()
-print(*m)
+               d.append(c2[k])
+if(d==[]):
+    print("No elements")
+else:
+    m=list(set(d))
+    m.sort()
+    print(*m)
+
