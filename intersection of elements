@@ -1,0 +1,12 @@
+k=[]
+n1=input()
+n2=n1.split()
+a1=input()
+a2=a1.split()
+for i in range(len(n2)):
+    for j in range(len(a2)):
+        if(n2[i]==a2[j]):
+            k.append(n2[i])
+l1=list(dict.fromkeys(k))
+print(*l1)
+        
