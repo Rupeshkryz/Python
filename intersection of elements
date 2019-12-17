@@ -7,6 +7,5 @@ for i in range(len(n2)):
     for j in range(len(a2)):
         if(n2[i]==a2[j]):
             k.append(n2[i])
-l1=list(dict.fromkeys(k))
-print(*l1)
+print(list(set(k))
         
