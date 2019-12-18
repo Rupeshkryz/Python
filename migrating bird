@@ -1,0 +1,19 @@
+x=int(input())
+x1=input()
+x2=x1.split()
+k=[]
+for i in range(len(x2)):
+    min=0
+    if(x2.count(x2[i])>0):
+        min=x2.count(x2[i])
+        if(min>0):
+            k.append(min)
+m=zip(k,x2)
+m1=list(set(m))
+m1.sort()
+print(m1)
+n=len(m1)
+if(m1[n-1][0]==m1[n-2][0]):
+    print(m1[n-2][1])
+else:
+    print(m1[n-1][1])
