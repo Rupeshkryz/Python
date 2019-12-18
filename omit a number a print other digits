@@ -1,3 +1,17 @@
+x=int(input())
+for i in range(x):
+    x1=input()
+    x2=x1.split()
+    for i in x2:
+        if '9' in list(i):
+            break
+        for j in i:
+            if(j.isdigit()):
+                print(j,end="")
+        print(end=" ")
+
+<-------------------------------------------------------or------------------------------------------------------------------>
+
 n=input()
 a=n.split()
 x=a[0]
