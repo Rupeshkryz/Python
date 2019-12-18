@@ -1,0 +1,19 @@
+n=input()
+a=n.split()
+x=a[0]
+x1=a[1]
+k=[]
+d=[]
+for i in x:
+    if(i!='9'):
+        k.append(i)
+for i in k:
+    if(i.isdigit()):
+        print(i,end="")
+print(end=" ")
+for i in x1:
+    if(i!='9'):
+        d.append(i)
+for i in d:
+    if(i.isdigit()):
+        print(i,end="")
