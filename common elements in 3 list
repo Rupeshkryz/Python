@@ -20,4 +20,21 @@ else:
     m=list(set(d))
     m.sort()
     print(*m)
+    
+    
+    
+    
+    <----------------------------------------------------or-------------------------------------------------------->
+    
+n=input()
+n1=n.split()
+a=input()
+a1=a.split()
+b=input()
+b1=b.split()
+c=[]
+for i in n1:
+    if i in a1 and i in b1:
+        c.append(i)
+print(*c)
 
