@@ -1,0 +1,19 @@
+x=input()
+y=['a','e','i','o','u']
+k=[]
+s=[]
+for i in x:
+    if i in y:
+        k.append("-1")
+        s.append(i)
+    else:
+        k.append(i)
+# print(k)
+z=s[::-1]
+m=0
+for i in k:
+    if(i=='-1'):
+        print(z[m],end="")
+        m+=1
+    else:
+        print(i,end="")
