@@ -1,0 +1,9 @@
+n=int(input())
+# a=input()
+l=[]
+for i in range(n):
+    a=input().split()
+    for i in range(len(a)-1):
+        l.append(int(a[1]))
+c=(sum(l))/n
+print(c)
