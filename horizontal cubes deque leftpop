@@ -1,0 +1,14 @@
+for i in range(int(input())):
+    a=int(input())
+    x=input().split()
+    x=x[:a]
+    l=[]
+    for i in range(len(x)):
+        if(x[0]>=x[i]):
+            l.append(x[i])
+        else:
+            break
+    if len(l)>1:
+        print("yes")
+    else:
+        print("no")
