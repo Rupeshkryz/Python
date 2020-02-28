@@ -1,13 +1,10 @@
-# n=int(input())
-n1=input()
-n1=list(n1)
-# n1=n1[:n]
+n=input().split()
 l=[]
 for i in range(int(input())):
     a=input().split()
-    for i in range(len(n1)-1):
-        if a[0] in n1[i]:
+    for i in n:
+        if a[0] in i:
             l.append(int(a[1]))
-        #n1.remove(n1[i])
-l=set(l)
+            n.remove(i)
+            break
 print(sum(l))
