@@ -1,0 +1,14 @@
+from collections import OrderedDict, namedtuple
+Purchase = namedtuple('Purchase', 'name quantity')
+N = int(input())
+purchases = []
+for i in range(N):
+  *name,quantity = input().split()
+  name = ' '.join(name)
+  purchases.append(Purchase(name, int(quantity)))
+purchases.sort(key=lambda x: x.name)
+mem = OrderedDict()
+for item in purchases:
+  mem[item.name] = mem.setdefault(item.name, 0) + item.quantity
+for item in mem.items():
+  print(*item, sep=' ')
