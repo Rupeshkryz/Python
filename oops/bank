@@ -1,0 +1,57 @@
+class Bank:
+    def __init__(self):
+        self.name=''
+        self.address=''
+        self.accno=''
+        self.phno=''
+        self.bal=7000
+    def info(self):
+        self.name=input()
+        self.address=input()
+        self.accno=int(input())
+        self.phno=int(input())
+        self.bal=7000
+        
+    def withdraw(self):
+        n=int(input())
+        a=self.bal
+        if a < 20000 and  a > 0:
+            a-=n
+            if a>0:
+                print("withdraw success")
+                print(a)
+                self.bal=a
+            else:
+                print("unsuccess")
+                
+                
+    def deposit(self):
+        n=int(input())
+        a=self.bal
+        a+=n
+        print(a)
+        print("deposit success")
+        self.bal=a
+        
+    def balinfo(self):
+        print("bal =",self.bal)
+        
+        
+        
+c=0
+if __name__ == "__main__":
+    while c!=5:
+        print("1.Enter Customer Credentials \n 2.Withdraw \n 3.Deposit \n 4.GetBalance \n 5.exit \n Enter the choice")
+        c=int(input())
+        if c==1:
+            obj=Bank()
+            obj.info()
+        elif c==2:
+            obj.withdraw()
+        elif c==3:
+            obj.deposit()
+        elif c==4:
+            obj.balinfo()
+    else:
+        print("Thank you")
+        
