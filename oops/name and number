@@ -1,0 +1,13 @@
+class Emp:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def display(self):
+        print(self.a,self.b)
+l=[]
+for i in range(int(input())):
+    l.append(Emp(input(),input()))
+c=input()
+for i in l:
+    if c == i.a:
+        i.display()
