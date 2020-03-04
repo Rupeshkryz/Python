@@ -1,0 +1,6 @@
+from collections import Counter as c
+votes=['who','who','who','who','john','john','john','jonny','jackie','john','jonny','jackie','jammie','jammie','jackie','jonny','jonny','jackie','jammie']
+d=c(votes)
+print(d)
+k=max(d,key=d.get)
+print(k)
