@@ -1,0 +1,7 @@
+from collections import Counter as c
+k=5
+l=[1,2,3,8,2,3,1,2,3,1,2,1,2,3]
+d=c(l)
+print(d)
+k=min(d.keys(),key=lambda x:d[x])
+print(k)
