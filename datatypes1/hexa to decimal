@@ -1,0 +1,10 @@
+n=input().strip("#")
+l=[]
+l1=[]
+for i in range(0,len(n),2):
+    l.append(n[i:i+2])
+print(l)
+for i in l:
+    res=int(str(i),16)
+    l1.append(res)
+print(tuple(l1))
