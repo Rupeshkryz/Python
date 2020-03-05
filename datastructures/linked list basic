@@ -1,0 +1,22 @@
+class Node:
+    def __init__(self,a):
+        self.a=a
+        self.next=None
+class LinkedList:
+    def __init__(self):
+        self.head=None
+        
+    def disp(self):
+        z=self.head
+        while z is not None:
+            print(z.a)
+            z=z.next
+
+l=LinkedList()
+l.head=Node("Team")
+b=Node("Rupesh")
+c=Node("Suhail")
+l.head.next=b
+b.next=c
+
+l.disp()
