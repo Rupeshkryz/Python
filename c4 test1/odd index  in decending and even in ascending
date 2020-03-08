@@ -1,0 +1,13 @@
+l=[1,2,3,4,5,6,7,8,9,10]
+l1=[]
+l2=[]
+for i in l:
+    if i%2==0:
+        l1.append(i)
+    else:
+        l2.append(i)
+l2=l2[::-1]
+print(l1,l2)
+c=list(zip(l2,l1))
+for i,j in c:
+    print(i,j,end=" ")
