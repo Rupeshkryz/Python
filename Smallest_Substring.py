@@ -8,4 +8,4 @@ for i in input:
     n.setdefault(i,count)
   elif i in n:
     n[i]=count
-print(min(n.items())[1])
+print(max(n.items())[1])
