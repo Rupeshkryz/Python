@@ -1,0 +1,13 @@
+import operator as o
+op={'+':o.add,'-':o.sub,'*':o.mul,'/':o.floordiv,'^':o.xor}
+n=input().split()
+l1=[]
+for i in n:
+    if i.isdigit():
+        l1.append(int(i))
+    else:
+        top=l1.pop()
+        nxttop=l1.pop()
+        res=op[i](nxttop,top)
+        l1.append(res)
+print(l1)
